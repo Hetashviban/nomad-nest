@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomad Nest</title>
+</head>
+<body>
+    <h2>Listing details</h2>
+
+    <ul>
+        <li>Title: <%= listing.title %></li>
+        <li>Description: <%= listing.description %></li>
+        <li>Price: &#36;<%= listing.price.toLocaleString("en-US") %></li>
+        <!-- The toLocaleString formats the price to US English
+        It adds commas for thousands separators and ensures two decimal places for cents-->
+        <li>Country: <%= listing.country %></li>
+        <li>Location: <%= listing.location %></li>
+    </ul>
+    <br>
+    <a href="/listings/<%= listing._id %>/edit">Edit this listing</a>
+    <br>
+    <form method="post" action="/listings/<%= listing._id %>?_method=DELETE">
+        <button>Delete this listing</button>
+    </form>
+</body>
+</html>

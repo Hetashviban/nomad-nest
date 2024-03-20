@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomad Nest</title>
+</head>
+
+<body>
+    <h3>Create a new listing</h3>
+    <form method="post" action="/listings">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="listing[title]" required placeholder="Enter the title">
+
+        <br> <br>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="listing[description]" required placeholder="Enter the description"></textarea>
+
+        <br> <br>
+
+        <label for="price">Price ($):</label>
+        <input type="number" id="price" name="listing[price]" step="0.01" required placeholder="Enter the price">
+
+        <br> <br>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="listing[country]" required placeholder="Enter the country">
+
+        <br> <br>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="listing[location]" required placeholder="Enter the location">
+
+        <br> <br>
+
+        <label for="image">Image URL:</label>
+        <input type="text" id="image" name="listing[image]" placeholder="Enter the image URL">
+
+        <br> <br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
