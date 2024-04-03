@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nomad Nest</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<% layout("/layouts/boilerplate.ejs") %>
 <body>
     <h3>All Listings</h3>
 
-    <form method="get" action="/listings/new">
+    <!-- <form method="get" action="/listings/new">
         <button>Create New Listing</button>
-    </form>
+    </form> -->
     
     <ul>
         <% for(let listings of allListings){ %>
@@ -19,5 +12,3 @@
         <% } %>
     </ul>
 </body>
-</html>
-

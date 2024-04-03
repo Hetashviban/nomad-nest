@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import Listing from "./models/Listing.js";
 import methodOverride from "method-override";
+import ejsMate from "ejs-mate";
 
 const app = express();
 
@@ -14,7 +15,7 @@ app.use(express.urlencoded({ extended: true })); //encoding the data so we can r
 
 app.use(methodOverride("_method"));
 
-
+app.engine('ejs', ejsMate); 
 
 
 
