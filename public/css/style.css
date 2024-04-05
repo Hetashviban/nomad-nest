@@ -1,12 +1,34 @@
-/*Navbar styling*/
-.navbar{
-    height: 3rem;
-    background-color: #fff;
+/*General styling*/
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.fa-compass{
-    color: #fe424d;
-    font-size: 1.9rem;
+.content{
+    flex: 1;
+}
+
+.bdy{
+    margin: 0em 4em;
+}
+
+
+/*Listing show route image*/
+.show-img{
+    height: 20em;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+}
+.btns a{
+    margin-right: 1rem;
+}
+
+/*Navbar styling*/
+.navbar{
+    background-color: #fff;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -14,7 +36,22 @@
 }
 
 
-
+/*Card Styling*/
+.row .card {
+    border: none;
+    margin-bottom: 2rem;
+}
+.row .card-img-top{
+    border-radius: 1rem;
+    width: 100%;
+    object-fit: cover;
+}
+.row .card-body{
+    padding: 0%;
+}
+.row .card-text {
+    font-weight: 400;
+}
 
 
 /*Styling the footer*/
@@ -36,4 +73,12 @@
 }
 .links a:hover{
     text-decoration: underline;
+}
+.listing-link{
+    text-decoration: none;
+}
+
+.row .card-img-overlay:hover{
+    background-color: #d4d2d2;
+    opacity: 0.1;
 }
